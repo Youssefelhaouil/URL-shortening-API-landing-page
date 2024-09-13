@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LinkSection() {
+function LinkSection({link,setLink,error,handleSubmit}) {
     return (
         <>
             <div className='px-[200px] md:px-[35px] pt-7 relative z-[10000]'>
@@ -8,10 +8,12 @@ function LinkSection() {
                     <input type="text"
                         name='link'
                         id='link'
+                        value={link}
+                        onChange={(e)=>setLink(e.target.value)}
                         placeholder='Shorten a link here'
-                        className='w-[80%] md:w-full h-12 rounded-md px-10  '
+                        className={`w-[80%] md:w-full h-12 rounded-md px-10 ${error && "placeholder:text-red border-2 border-red outline-red"} `}
                     />
-                    <button className='w-[20%] md:w-full h-12 px-4 bg-cyan hover:bg-opacity-55 rounded-md cursor-pointer text-white font-bold'>
+                    <button onClick={handleSubmit} className='w-[20%] md:w-full h-12 px-4 bg-cyan hover:bg-opacity-55 rounded-md cursor-pointer text-white font-bold'>
                         Shorten it!
                     </button>
 
