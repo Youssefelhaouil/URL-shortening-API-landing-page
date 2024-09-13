@@ -1,3 +1,5 @@
+import Boost from "./compenents/Boost"
+import Footer from "./compenents/Footer"
 import Header from "./compenents/Header"
 import HeroSection from "./compenents/HeroSection"
 import LinkSection from "./compenents/LinkSection"
@@ -13,6 +15,8 @@ function App() {
      <HeroSection />
      <LinkSection />
      <Statistics />
+     <Boost />
+     <Footer />
      
      </>
     </>

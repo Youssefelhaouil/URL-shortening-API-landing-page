@@ -2,7 +2,7 @@ import React from 'react'
 
 function Statistics() {
     return (
-        <div className='bg-grayish-violet bg-opacity-20 h-[800px] lg:h-fit  w-full -mt-[100px] pb-[40px]'>
+        <div className='bg-grayish-violet bg-opacity-20 h-[800px] lg:h-fit  w-full -mt-[100px] pb-[900px] md:pb-[100px]'>
             <div className='px-[200px] md:px-[35px] pt-[240px] md:pt-[150px]'>
                 <div className='text-center flex flex-col gap-2'>
                     <h1 className='font-bold text-3xl md:text-xl text-very-dark-violet'>Advanced Statistics</h1>

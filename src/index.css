@@ -18,3 +18,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.Boost{
+  background-image:url("/bg-boost-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
